@@ -17,8 +17,6 @@
     "google"
   ],
   "rules": {
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
     "operator-linebreak": [
       "error",
       "after",
