@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "google"
+  ],
+  "rules": {
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      { "overrides": { "?": "before", ":": "before" } }
+    ],
+    "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
+    "no-trailing-spaces": ["error", { "ignoreComments": true }],
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2],
+    "quotes": "off",
+    "linebreak-style": "off",
+    "require-jsdoc": "off",
+    "no-empty": "off",
+    "new-cap": "off"
+  }
+}
