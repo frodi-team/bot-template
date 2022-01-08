@@ -6,19 +6,19 @@ dotenvConfig();
 
 @Service()
 export class ConfigService {
-  get(name: string): string {
+  public get(name: string): string {
     return process.env[name];
   }
 
-  getNumber(name: string): number {
+  public getNumber(name: string): number {
     return Number(process.env[name]);
   }
 
-  getBoolean(name: string): boolean {
+  public getBoolean(name: string): boolean {
     return Boolean(process.env[name]);
   }
 
-  getJson<T>(name: string): T {
+  public getJSON<T>(name: string): T {
     return JSON.parse(process.env[name]);
   }
 }
