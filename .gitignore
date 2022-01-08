@@ -7,3 +7,9 @@ node_modules
 
 #dist
 dist
+
+# Yarn
+yarn.lock
+
+# NPM
+package-lock.json
