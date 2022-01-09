@@ -17,6 +17,7 @@
     "google"
   ],
   "rules": {
+    "@typescript-eslint/explicit-member-accessibility": "warn",
     "@typescript-eslint/interface-name-prefix": "off",
     "operator-linebreak": [
       "error",

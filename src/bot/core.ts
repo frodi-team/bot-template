@@ -2,7 +2,7 @@ import { Service } from 'typedi';
 
 @Service()
 export class Core {
-  readonly start = () => {
+  public readonly start = () => {
     console.log('Bot started');
   };
 }
